@@ -1,0 +1,49 @@
+07-11-2018 19:02:44 INFO : 
+07-11-2018 19:02:44 INFO : Total object number: 1000
+07-11-2018 19:02:44 INFO : Start to save non serialized objects. Wait...
+07-11-2018 19:02:45 INFO : Start to save serialized objects. Wait...
+07-11-2018 19:02:45 INFO : Non serialized objects saving time: 0.7219722230000001
+07-11-2018 19:02:45 INFO : Serialized objects saving time: 0.41378436900000004
+07-11-2018 19:02:45 INFO : Serialization overhead time: 0.30818785400000004
+07-11-2018 19:03:39 INFO : 
+07-11-2018 19:03:39 INFO : Total object number: 1000
+07-11-2018 19:03:39 INFO : Start to save non serialized objects. Wait...
+07-11-2018 19:03:39 INFO : Start to save serialized objects. Wait...
+07-11-2018 19:03:40 INFO : Non serialized objects saving time: 0.7367232370000001
+07-11-2018 19:03:40 INFO : Serialized objects saving time: 0.433791715
+07-11-2018 19:03:40 INFO : Serialization overhead time: 0.302931522
+07-11-2018 19:04:08 INFO : 
+07-11-2018 19:04:08 INFO : Total object number: 1000
+07-11-2018 19:04:08 INFO : Start to save non serialized objects. Wait...
+07-11-2018 19:04:09 INFO : Start to save serialized objects. Wait...
+07-11-2018 19:04:09 INFO : Non serialized objects saving time: 0.7097916940000001
+07-11-2018 19:04:09 INFO : Serialized objects saving time: 0.5140759930000001
+07-11-2018 19:04:09 INFO : Serialization overhead time: 0.19571570100000002
+07-11-2018 19:05:06 INFO : 
+07-11-2018 19:05:06 INFO : Total object number: 10000
+07-11-2018 19:05:06 INFO : Start to save non serialized objects. Wait...
+07-11-2018 19:05:10 INFO : Start to save serialized objects. Wait...
+07-11-2018 19:05:13 INFO : Non serialized objects saving time: 4.027968518000001
+07-11-2018 19:05:13 INFO : Serialized objects saving time: 3.5487637110000003
+07-11-2018 19:05:13 INFO : Serialization overhead time: 0.479204807
+07-11-2018 19:06:12 INFO : 
+07-11-2018 19:06:12 INFO : Total object number: 10000
+07-11-2018 19:06:12 INFO : Start to save non serialized objects. Wait...
+07-11-2018 19:06:16 INFO : Start to save serialized objects. Wait...
+07-11-2018 19:06:20 INFO : Non serialized objects saving time: 4.151462663
+07-11-2018 19:06:20 INFO : Serialized objects saving time: 3.418778531
+07-11-2018 19:06:20 INFO : Serialization overhead time: 0.732684132
+07-11-2018 19:07:34 INFO : 
+07-11-2018 19:07:34 INFO : Total object number: 10000
+07-11-2018 19:07:34 INFO : Start to save non serialized objects. Wait...
+07-11-2018 19:07:39 INFO : Start to save serialized objects. Wait...
+07-11-2018 19:07:42 INFO : Non serialized objects saving time: 4.287714816
+07-11-2018 19:07:42 INFO : Serialized objects saving time: 3.5164690320000003
+07-11-2018 19:07:42 INFO : Serialization overhead time: 0.7712457840000001
+
+07-11-2018 19:16:31 INFO : 
+07-11-2018 19:16:31 INFO : Total object number: 25000
+07-11-2018 19:16:31 INFO : Start to save non serialized objects. Wait...
+07-11-2018 19:32:03 INFO : 
+07-11-2018 19:32:03 INFO : Total object number: 25000
+07-11-2018 19:32:03 INFO : Start to save non serialized objects. Wait...
