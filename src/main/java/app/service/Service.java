@@ -4,18 +4,20 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.redislabs.redisgraph.RedisGraphAPI;
 import com.redislabs.redisgraph.ResultSet;
+import redis.clients.jedis.Jedis;
+import redis.clients.jedis.util.Pool;
 
 import java.util.List;
 import java.util.Optional;
 
 public class Service {
 
-    private static ObjectMapper objectMapper = new ObjectMapper();
-    private Class clazz;
+    private static ObjectMapper objectMapper;
     private static RedisGraphAPI api;
+    private static Pool<Jedis> connectionPool = ConnectionPoolFactory.getConnectionPool();
 
-    public Service(Class clazz) {
-        this.clazz = clazz;
+    public Service(ObjectMapper objectMapper) {
+        this.objectMapper = objectMapper;
     }
 
     public <T> void saveNode(String tableName, T node) {
@@ -27,7 +29,7 @@ public class Service {
         }
     }
 
-    public static  <T> String getSerialized(T node) throws JsonProcessingException {
+    public static <T> String getSerialized(T node) throws JsonProcessingException {
         return objectMapper.writeValueAsString(node);
     }
 
@@ -40,11 +42,18 @@ public class Service {
     }
 
     public void saveSerializedNodes(String tableName, List<String> nodes) {
-        nodes.forEach((node) -> saveSerializedNode(tableName, node));
+        StringBuilder query = new StringBuilder("CREATE ");
+        nodes.forEach((node) -> {
+            query.append("(")
+                    .append(tableName)
+                    .append(node)
+                    .append("),");
+        });
+        api.query(query.replace(query.length() - 1, query.length(), "").toString());
     }
 
     public void createGraph(String name) {
-        api = new RedisGraphAPI(name);
+        api = new RedisGraphAPI(name, connectionPool);
     }
 
     public void deleteGraph() {
