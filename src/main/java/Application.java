@@ -12,20 +12,21 @@ import java.util.List;
 
 public class Application {
 
-    public static final int TOTAL_ITEM_NUMBER = 25_000;
+    private int totalItemNumber;
 
-    private static ObjectMapper mapper;
-    private static Service service;
-    private static List<Item> itemList = new LinkedList<>();
-    private static List<String> serializedItemList = new LinkedList<>();
+    private ObjectMapper mapper;
+    private Service service;
+    private List<Item> itemList = new LinkedList<>();
+    private List<String> serializedItemList = new LinkedList<>();
 
     private static final Logger logger = LoggerFactory.getLogger(Application.class);
 
-    public Application() {
+    public Application(int totalItemNumber) {
+        this.totalItemNumber = totalItemNumber;
         mapper = new ObjectMapper();
         mapper.configure(JsonGenerator.Feature.QUOTE_FIELD_NAMES, false);
         service = new Service(Item.class, mapper);
-        prepareTestData(TOTAL_ITEM_NUMBER);
+        prepareTestData(this.totalItemNumber);
     }
 
     private void prepareTestData(int size) {
@@ -56,34 +57,76 @@ public class Application {
         this.service = service;
     }
 
-    public static void main(String[] args) throws JsonProcessingException {
-        Application example = new Application();
+    public void runNonSerializedObjectsSavingPerformanceTest() {
         Long timeAtStart;
         Long timeAtFinish;
 
         logger.info("");
-        logger.info("Total object number: " + TOTAL_ITEM_NUMBER);
+        logger.info("Total object number: " + totalItemNumber);
         logger.info("Start to save non serialized objects. Wait...");
 
         timeAtStart = System.nanoTime();
-        example.getService().createGraph("testGraph");
-        example.getService().saveNodes("TestTable1", itemList);
+        service.createGraph("testGraph");
+        service.saveNodes("TestTable", itemList);
         timeAtFinish = System.nanoTime();
-        Long nonSerializedObjectsSavingTime = timeAtFinish - timeAtStart;
-        example.getService().deleteGraph();
+        service.deleteGraph();
 
+        Long nonSerializedObjectsSavingTime = timeAtFinish - timeAtStart;
+        logger.info("Non serialized objects saving time: " + nonSerializedObjectsSavingTime * 1e-9);
+    }
+
+    public void runSerializedObjectsSavePerformanceTest() {
+        Long timeAtStart;
+        Long timeAtFinish;
+
+        logger.info("");
+        logger.info("Total object number: " + totalItemNumber);
         logger.info("Start to save serialized objects. Wait...");
 
         timeAtStart = System.nanoTime();
-        example.getService().saveSerializedNodes("TestTable1", serializedItemList);
+        service.createGraph("testGraph");
+        service.saveSerializedNodes("TestTable", serializedItemList);
         timeAtFinish = System.nanoTime();
+        service.deleteGraph();
+
         Long serializedObjectsSavingTime = timeAtFinish - timeAtStart;
-        example.getService().deleteGraph();
-
-        Long serializationOverhead = nonSerializedObjectsSavingTime - serializedObjectsSavingTime;
-
-        logger.info("Non serialized objects saving time: " + nonSerializedObjectsSavingTime * 1e-9);
         logger.info("Serialized objects saving time: " + serializedObjectsSavingTime * 1e-9);
-        logger.info("Serialization overhead time: " + serializationOverhead * 1e-9);
+    }
+
+    public void runSerializationPerformanceTest() throws JsonProcessingException {
+        List<String> testDataList = new LinkedList<>();
+        Long timeAtStart;
+        Long timeAtFinish;
+
+        logger.info("");
+        logger.info("Total object number: " + totalItemNumber);
+        logger.info("Start serialize objects. Wait...");
+
+        timeAtStart = System.nanoTime();
+        itemList.forEach((item) -> {
+            try {
+                testDataList.add(mapper.writeValueAsString(item));
+            } catch (JsonProcessingException jspe) {
+                throw new RuntimeException(jspe);
+            }
+        });
+        timeAtFinish = System.nanoTime();
+
+        logger.info("Objects serialization time: " + (timeAtFinish - timeAtStart) * 1e-9);
+    }
+
+    public static void main(String[] args) throws JsonProcessingException, InterruptedException {
+
+//        Application application = new Application(1000_000);
+
+//        application.runNonSerializedObjectsSavePerformanceTest();
+
+//        application.runSerializedObjectsSavePerformanceTest();
+
+        for (int i = 0; i < 10; i ++) {
+            Application application = new Application(1000);
+            application.runSerializationPerformanceTest();
+            Thread.sleep(10000);
+        }
     }
 }

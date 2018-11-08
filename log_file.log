@@ -1,49 +1,185 @@
-07-11-2018 19:02:44 INFO : 
-07-11-2018 19:02:44 INFO : Total object number: 1000
-07-11-2018 19:02:44 INFO : Start to save non serialized objects. Wait...
-07-11-2018 19:02:45 INFO : Start to save serialized objects. Wait...
-07-11-2018 19:02:45 INFO : Non serialized objects saving time: 0.7219722230000001
-07-11-2018 19:02:45 INFO : Serialized objects saving time: 0.41378436900000004
-07-11-2018 19:02:45 INFO : Serialization overhead time: 0.30818785400000004
-07-11-2018 19:03:39 INFO : 
-07-11-2018 19:03:39 INFO : Total object number: 1000
-07-11-2018 19:03:39 INFO : Start to save non serialized objects. Wait...
-07-11-2018 19:03:39 INFO : Start to save serialized objects. Wait...
-07-11-2018 19:03:40 INFO : Non serialized objects saving time: 0.7367232370000001
-07-11-2018 19:03:40 INFO : Serialized objects saving time: 0.433791715
-07-11-2018 19:03:40 INFO : Serialization overhead time: 0.302931522
-07-11-2018 19:04:08 INFO : 
-07-11-2018 19:04:08 INFO : Total object number: 1000
-07-11-2018 19:04:08 INFO : Start to save non serialized objects. Wait...
-07-11-2018 19:04:09 INFO : Start to save serialized objects. Wait...
-07-11-2018 19:04:09 INFO : Non serialized objects saving time: 0.7097916940000001
-07-11-2018 19:04:09 INFO : Serialized objects saving time: 0.5140759930000001
-07-11-2018 19:04:09 INFO : Serialization overhead time: 0.19571570100000002
-07-11-2018 19:05:06 INFO : 
-07-11-2018 19:05:06 INFO : Total object number: 10000
-07-11-2018 19:05:06 INFO : Start to save non serialized objects. Wait...
-07-11-2018 19:05:10 INFO : Start to save serialized objects. Wait...
-07-11-2018 19:05:13 INFO : Non serialized objects saving time: 4.027968518000001
-07-11-2018 19:05:13 INFO : Serialized objects saving time: 3.5487637110000003
-07-11-2018 19:05:13 INFO : Serialization overhead time: 0.479204807
-07-11-2018 19:06:12 INFO : 
-07-11-2018 19:06:12 INFO : Total object number: 10000
-07-11-2018 19:06:12 INFO : Start to save non serialized objects. Wait...
-07-11-2018 19:06:16 INFO : Start to save serialized objects. Wait...
-07-11-2018 19:06:20 INFO : Non serialized objects saving time: 4.151462663
-07-11-2018 19:06:20 INFO : Serialized objects saving time: 3.418778531
-07-11-2018 19:06:20 INFO : Serialization overhead time: 0.732684132
-07-11-2018 19:07:34 INFO : 
-07-11-2018 19:07:34 INFO : Total object number: 10000
-07-11-2018 19:07:34 INFO : Start to save non serialized objects. Wait...
-07-11-2018 19:07:39 INFO : Start to save serialized objects. Wait...
-07-11-2018 19:07:42 INFO : Non serialized objects saving time: 4.287714816
-07-11-2018 19:07:42 INFO : Serialized objects saving time: 3.5164690320000003
-07-11-2018 19:07:42 INFO : Serialization overhead time: 0.7712457840000001
 
-07-11-2018 19:16:31 INFO : 
-07-11-2018 19:16:31 INFO : Total object number: 25000
-07-11-2018 19:16:31 INFO : Start to save non serialized objects. Wait...
-07-11-2018 19:32:03 INFO : 
-07-11-2018 19:32:03 INFO : Total object number: 25000
-07-11-2018 19:32:03 INFO : Start to save non serialized objects. Wait...
+08-11-2018 11:33:54 INFO : 
+08-11-2018 11:33:54 INFO : Total object number: 100
+08-11-2018 11:33:54 INFO : Start to save non serialized objects. Wait...
+08-11-2018 11:33:54 INFO : Non serialized objects saving time: 0.196886313
+08-11-2018 11:33:54 INFO : 
+08-11-2018 11:33:54 INFO : Total object number: 100
+08-11-2018 11:33:54 INFO : Start to save serialized objects. Wait...
+08-11-2018 11:33:54 INFO : Serialized objects saving time: 0.056648633000000004
+08-11-2018 11:47:28 INFO : 
+08-11-2018 11:47:28 INFO : Total object number: 100000
+08-11-2018 11:47:28 INFO : Start serialize objects. Wait...
+08-11-2018 11:47:29 INFO : Objects serialization time: 0.402822241
+08-11-2018 11:47:34 INFO : 
+08-11-2018 11:47:34 INFO : Total object number: 100000
+08-11-2018 11:47:34 INFO : Start serialize objects. Wait...
+08-11-2018 11:47:35 INFO : Objects serialization time: 0.385267275
+08-11-2018 11:47:46 INFO : 
+08-11-2018 11:47:46 INFO : Total object number: 1000000
+08-11-2018 11:47:46 INFO : Start serialize objects. Wait...
+08-11-2018 11:47:49 INFO : Objects serialization time: 3.2206382170000003
+08-11-2018 11:48:01 INFO : 
+08-11-2018 11:48:01 INFO : Total object number: 1000000
+08-11-2018 11:48:01 INFO : Start serialize objects. Wait...
+08-11-2018 11:48:04 INFO : Objects serialization time: 3.300670444
+08-11-2018 11:50:35 INFO : 
+08-11-2018 11:50:35 INFO : Total object number: 1000000
+08-11-2018 11:50:35 INFO : Start serialize objects. Wait...
+08-11-2018 11:50:38 INFO : Objects serialization time: 3.160983879
+08-11-2018 11:50:48 INFO : 
+08-11-2018 11:50:48 INFO : Total object number: 1000000
+08-11-2018 11:50:48 INFO : Start serialize objects. Wait...
+08-11-2018 11:50:50 INFO : Objects serialization time: 1.9440427260000002
+08-11-2018 11:51:00 INFO : 
+08-11-2018 11:51:00 INFO : Total object number: 1000000
+08-11-2018 11:51:00 INFO : Start serialize objects. Wait...
+08-11-2018 11:51:01 INFO : Objects serialization time: 0.99881136
+08-11-2018 11:51:11 INFO : 
+08-11-2018 11:51:11 INFO : Total object number: 1000000
+08-11-2018 11:51:11 INFO : Start serialize objects. Wait...
+08-11-2018 11:51:13 INFO : Objects serialization time: 1.8719737600000002
+08-11-2018 11:51:23 INFO : 
+08-11-2018 11:51:23 INFO : Total object number: 1000000
+08-11-2018 11:51:23 INFO : Start serialize objects. Wait...
+08-11-2018 11:51:25 INFO : Objects serialization time: 1.9783496340000002
+08-11-2018 11:51:35 INFO : 
+08-11-2018 11:51:35 INFO : Total object number: 1000000
+08-11-2018 11:51:35 INFO : Start serialize objects. Wait...
+08-11-2018 11:51:36 INFO : Objects serialization time: 1.101149329
+08-11-2018 11:51:46 INFO : 
+08-11-2018 11:51:46 INFO : Total object number: 1000000
+08-11-2018 11:51:46 INFO : Start serialize objects. Wait...
+08-11-2018 11:51:48 INFO : Objects serialization time: 1.513569431
+08-11-2018 11:51:58 INFO : 
+08-11-2018 11:51:58 INFO : Total object number: 1000000
+08-11-2018 11:51:58 INFO : Start serialize objects. Wait...
+08-11-2018 11:51:59 INFO : Objects serialization time: 1.1797083800000001
+08-11-2018 11:52:09 INFO : 
+08-11-2018 11:52:09 INFO : Total object number: 1000000
+08-11-2018 11:52:09 INFO : Start serialize objects. Wait...
+08-11-2018 11:52:11 INFO : Objects serialization time: 1.552942883
+08-11-2018 11:52:21 INFO : 
+08-11-2018 11:52:21 INFO : Total object number: 1000000
+08-11-2018 11:52:21 INFO : Start serialize objects. Wait...
+08-11-2018 11:52:23 INFO : Objects serialization time: 2.0725123460000003
+08-11-2018 11:53:34 INFO : 
+08-11-2018 11:53:34 INFO : Total object number: 1000000
+08-11-2018 11:53:34 INFO : Start serialize objects. Wait...
+08-11-2018 11:53:37 INFO : Objects serialization time: 3.2557559200000004
+08-11-2018 11:53:51 INFO : 
+08-11-2018 11:53:51 INFO : Total object number: 1000000
+08-11-2018 11:53:51 INFO : Start serialize objects. Wait...
+08-11-2018 11:53:53 INFO : Objects serialization time: 2.3519743450000004
+08-11-2018 11:54:07 INFO : 
+08-11-2018 11:54:07 INFO : Total object number: 1000000
+08-11-2018 11:54:07 INFO : Start serialize objects. Wait...
+08-11-2018 11:54:08 INFO : Objects serialization time: 1.0197958870000001
+08-11-2018 11:54:21 INFO : 
+08-11-2018 11:54:21 INFO : Total object number: 1000000
+08-11-2018 11:54:21 INFO : Start serialize objects. Wait...
+08-11-2018 11:54:23 INFO : Objects serialization time: 2.0987597
+08-11-2018 11:54:37 INFO : 
+08-11-2018 11:54:37 INFO : Total object number: 1000000
+08-11-2018 11:54:37 INFO : Start serialize objects. Wait...
+08-11-2018 11:54:38 INFO : Objects serialization time: 1.133722366
+08-11-2018 11:54:52 INFO : 
+08-11-2018 11:54:52 INFO : Total object number: 1000000
+08-11-2018 11:54:52 INFO : Start serialize objects. Wait...
+08-11-2018 11:54:54 INFO : Objects serialization time: 2.211761176
+08-11-2018 11:55:08 INFO : 
+08-11-2018 11:55:08 INFO : Total object number: 1000000
+08-11-2018 11:55:08 INFO : Start serialize objects. Wait...
+08-11-2018 11:55:09 INFO : Objects serialization time: 1.3504196190000002
+08-11-2018 11:55:23 INFO : 
+08-11-2018 11:55:23 INFO : Total object number: 1000000
+08-11-2018 11:55:23 INFO : Start serialize objects. Wait...
+08-11-2018 11:55:24 INFO : Objects serialization time: 1.1602794010000002
+08-11-2018 11:55:38 INFO : 
+08-11-2018 11:55:38 INFO : Total object number: 1000000
+08-11-2018 11:55:38 INFO : Start serialize objects. Wait...
+08-11-2018 11:55:39 INFO : Objects serialization time: 1.2285896
+08-11-2018 11:55:52 INFO : 
+08-11-2018 11:55:52 INFO : Total object number: 1000000
+08-11-2018 11:55:52 INFO : Start serialize objects. Wait...
+08-11-2018 11:55:54 INFO : Objects serialization time: 1.321341074
+08-11-2018 12:05:55 INFO : 
+08-11-2018 12:05:55 INFO : Total object number: 1000000
+08-11-2018 12:05:55 INFO : Start serialize objects. Wait...
+08-11-2018 12:05:58 INFO : Objects serialization time: 2.2714933
+08-11-2018 12:06:12 INFO : 
+08-11-2018 12:06:12 INFO : Total object number: 1000000
+08-11-2018 12:06:12 INFO : Start serialize objects. Wait...
+08-11-2018 12:06:13 INFO : Objects serialization time: 1.833971438
+08-11-2018 12:06:27 INFO : 
+08-11-2018 12:06:27 INFO : Total object number: 1000000
+08-11-2018 12:06:27 INFO : Start serialize objects. Wait...
+08-11-2018 12:06:29 INFO : Objects serialization time: 2.203359377
+08-11-2018 12:06:43 INFO : 
+08-11-2018 12:06:43 INFO : Total object number: 1000000
+08-11-2018 12:06:43 INFO : Start serialize objects. Wait...
+08-11-2018 12:06:45 INFO : Objects serialization time: 1.2796781210000001
+08-11-2018 12:06:58 INFO : 
+08-11-2018 12:06:58 INFO : Total object number: 1000000
+08-11-2018 12:06:58 INFO : Start serialize objects. Wait...
+08-11-2018 12:07:00 INFO : Objects serialization time: 2.123789786
+08-11-2018 12:07:14 INFO : 
+08-11-2018 12:07:14 INFO : Total object number: 1000000
+08-11-2018 12:07:14 INFO : Start serialize objects. Wait...
+08-11-2018 12:07:15 INFO : Objects serialization time: 1.1554479930000001
+08-11-2018 12:07:29 INFO : 
+08-11-2018 12:07:29 INFO : Total object number: 1000000
+08-11-2018 12:07:29 INFO : Start serialize objects. Wait...
+08-11-2018 12:07:31 INFO : Objects serialization time: 1.396402587
+08-11-2018 12:07:44 INFO : 
+08-11-2018 12:07:44 INFO : Total object number: 1000000
+08-11-2018 12:07:44 INFO : Start serialize objects. Wait...
+08-11-2018 12:07:46 INFO : Objects serialization time: 1.369680279
+08-11-2018 12:07:59 INFO : 
+08-11-2018 12:07:59 INFO : Total object number: 1000000
+08-11-2018 12:07:59 INFO : Start serialize objects. Wait...
+08-11-2018 12:08:01 INFO : Objects serialization time: 1.262090012
+08-11-2018 12:08:14 INFO : 
+08-11-2018 12:08:14 INFO : Total object number: 1000000
+08-11-2018 12:08:14 INFO : Start serialize objects. Wait...
+08-11-2018 12:08:15 INFO : Objects serialization time: 1.265387312
+08-11-2018 12:08:47 INFO : 
+08-11-2018 12:08:47 INFO : Total object number: 1000
+08-11-2018 12:08:47 INFO : Start serialize objects. Wait...
+08-11-2018 12:08:48 INFO : Objects serialization time: 0.05490935
+08-11-2018 12:08:58 INFO : 
+08-11-2018 12:08:58 INFO : Total object number: 1000
+08-11-2018 12:08:58 INFO : Start serialize objects. Wait...
+08-11-2018 12:08:58 INFO : Objects serialization time: 0.0029421520000000004
+08-11-2018 12:09:08 INFO : 
+08-11-2018 12:09:08 INFO : Total object number: 1000
+08-11-2018 12:09:08 INFO : Start serialize objects. Wait...
+08-11-2018 12:09:08 INFO : Objects serialization time: 0.002260705
+08-11-2018 12:09:18 INFO : 
+08-11-2018 12:09:18 INFO : Total object number: 1000
+08-11-2018 12:09:18 INFO : Start serialize objects. Wait...
+08-11-2018 12:09:18 INFO : Objects serialization time: 0.0017662670000000002
+08-11-2018 12:09:28 INFO : 
+08-11-2018 12:09:28 INFO : Total object number: 1000
+08-11-2018 12:09:28 INFO : Start serialize objects. Wait...
+08-11-2018 12:09:28 INFO : Objects serialization time: 0.0016813050000000001
+08-11-2018 12:09:38 INFO : 
+08-11-2018 12:09:38 INFO : Total object number: 1000
+08-11-2018 12:09:38 INFO : Start serialize objects. Wait...
+08-11-2018 12:09:38 INFO : Objects serialization time: 0.0016900270000000002
+08-11-2018 12:09:48 INFO : 
+08-11-2018 12:09:48 INFO : Total object number: 1000
+08-11-2018 12:09:48 INFO : Start serialize objects. Wait...
+08-11-2018 12:09:48 INFO : Objects serialization time: 0.0015529740000000002
+08-11-2018 12:09:58 INFO : 
+08-11-2018 12:09:58 INFO : Total object number: 1000
+08-11-2018 12:09:58 INFO : Start serialize objects. Wait...
+08-11-2018 12:09:58 INFO : Objects serialization time: 0.0016099710000000002
+08-11-2018 12:10:08 INFO : 
+08-11-2018 12:10:08 INFO : Total object number: 1000
+08-11-2018 12:10:08 INFO : Start serialize objects. Wait...
+08-11-2018 12:10:08 INFO : Objects serialization time: 0.001517363
+08-11-2018 12:10:18 INFO : 
+08-11-2018 12:10:18 INFO : Total object number: 1000
+08-11-2018 12:10:18 INFO : Start serialize objects. Wait...
+08-11-2018 12:10:18 INFO : Objects serialization time: 0.001639955
