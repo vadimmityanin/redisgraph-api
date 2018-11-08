@@ -1,6 +1,7 @@
 package app;
 
 import app.model.Item;
+import app.service.SearchService;
 import app.service.Service;
 import app.util.ItemGenerator;
 import com.fasterxml.jackson.core.JsonGenerator;
@@ -89,10 +90,11 @@ public class Application {
 //            }).start();
 //        }
 
-        Options opt = new OptionsBuilder()
-                .include(Application.class.getSimpleName())
-                .build();
-
-        new Runner(opt).run();
+        SearchService.search();
+//        Options opt = new OptionsBuilder()
+//                .include(Application.class.getSimpleName())
+//                .build();
+//
+//        new Runner(opt).run();
     }
 }

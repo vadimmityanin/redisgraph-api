@@ -45,6 +45,11 @@
             <artifactId>slf4j-api</artifactId>
             <version>1.7.25</version>
         </dependency>
+        <dependency>
+            <groupId>net.iot-solutions.graphdb</groupId>
+            <artifactId>jcypher</artifactId>
+            <version>4.1.1</version>
+        </dependency>
 
 
             <dependency>
