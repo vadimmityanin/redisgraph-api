@@ -42,11 +42,10 @@ public class SearchService {
                 .node(b)
                 .label("Person")
                 ;
-        Node v = MATCH.node(new JcRelation(":knows").endNode());
         Concatenator where = WHERE.valueOf(a.property("name")).EQUALS("roi");
         RSortable ret = RETURN.value(a);
         JcQuery jcQuery = new JcQuery();
-        jcQuery.setClauses(new IClause[] {p,where,ret,v});
+        jcQuery.setClauses(new IClause[] {p,where,ret});
         String cypher = Util.toCypher(jcQuery, Format.PRETTY_3
         );
         System.err.println(cypher);
