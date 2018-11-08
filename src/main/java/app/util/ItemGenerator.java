@@ -1,6 +1,6 @@
-package util;
+package app.util;
 
-import model.Item;
+import app.model.Item;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package service;
+package app.service;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -10,22 +10,25 @@ import java.util.Optional;
 
 public class Service {
 
-    private ObjectMapper objectMapper;
+    private static ObjectMapper objectMapper = new ObjectMapper();
     private Class clazz;
     private static RedisGraphAPI api;
 
-    public Service(Class clazz, ObjectMapper objectMapper) {
+    public Service(Class clazz) {
         this.clazz = clazz;
-        this.objectMapper = objectMapper;
     }
 
     public <T> void saveNode(String tableName, T node) {
         try {
-            String serializedNode = objectMapper.writeValueAsString(node);
+            String serializedNode = getSerialized(node);
             saveSerializedNode(tableName, serializedNode);
         } catch (JsonProcessingException jspe) {
             throw new RuntimeException(jspe);
         }
+    }
+
+    public static  <T> String getSerialized(T node) throws JsonProcessingException {
+        return objectMapper.writeValueAsString(node);
     }
 
     public void saveSerializedNode(String tableName, String serializedNode) {
