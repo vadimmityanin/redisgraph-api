@@ -3,14 +3,11 @@ package app;
 import app.model.Item;
 import app.service.SearchService;
 import app.service.Service;
-import app.util.ItemGenerator;
+//import app.util.ItemGenerator;
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.openjdk.jmh.annotations.*;
-import org.openjdk.jmh.runner.Runner;
-import org.openjdk.jmh.runner.options.Options;
-import org.openjdk.jmh.runner.options.OptionsBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -38,18 +35,18 @@ public class Application {
             service.createGraph("test");
         }
 
-        @Setup(Level.Invocation)
-        public void prepareTestData() {
-            try {
-                for (int i = 0; i < totalItemNumber; i++) {
-                    Item item = ItemGenerator.generateRandomItem();
-                    itemList.add(item);
-                    serializedItemList.add(mapper.writeValueAsString(item));
-                }
-            } catch (JsonProcessingException jspe) {
-                throw new RuntimeException(jspe);
-            }
-        }
+//        @Setup(Level.Invocation)
+//        public void prepareTestData() {
+//            try {
+//                for (int i = 0; i < totalItemNumber; i++) {
+//                    Item item = ItemGenerator.generateRandomItem();
+//                    itemList.add(item);
+//                    serializedItemList.add(mapper.writeValueAsString(item));
+//                }
+//            } catch (JsonProcessingException jspe) {
+//                throw new RuntimeException(jspe);
+//            }
+//        }
     }
 
 
@@ -90,7 +87,7 @@ public class Application {
 //            }).start();
 //        }
 
-        SearchService.search();
+        SearchService.search2();
 //        Options opt = new OptionsBuilder()
 //                .include(Application.class.getSimpleName())
 //                .build();
