@@ -25,6 +25,4 @@
 hs_err_pid*
 
 .idea/
-src/test/
 target/
-/log_file.log
